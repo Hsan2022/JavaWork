@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ScannerExample {
     public static void main(String[] args) {
-        //make new instance of scanner object
+        //make new instance of scanner object, gives a pointer to it in the sc1 variable
         Scanner scanner = new Scanner(System.in);
         //
         System.out.println("Enter a number: ");
