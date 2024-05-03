@@ -31,9 +31,9 @@ public class IfStatements {
             System.out.println("greater than 30 ");
         }
     }
-}
 
-public static int test(int x) {
-    x = x = 1;
-    return x
+    public static int test(int x) {
+        x = x = 1;
+        return x;
+    }
 }
