@@ -1,10 +1,13 @@
 package org.example.glab_303_5_1;
 
+import java.util.Scanner;
+
 public class PalindromeExample {
     public static void main(String[] args) {
         // Example 3: Palindrome
         String original;  // Objects of String class
-        StringBuilder reverse = new StringBuilder();
+        StringBuilder reverse;
+        reverse = new StringBuilder();
         Scanner in = new Scanner(System.in);
         System.out.println("Enter a string/number to check if it is a palindrome");
         original = in.nextLine();

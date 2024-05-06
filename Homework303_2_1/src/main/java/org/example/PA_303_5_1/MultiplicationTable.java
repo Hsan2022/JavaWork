@@ -7,8 +7,10 @@ public class MultiplicationTable {
         int size = 11;
         for (int i = 1; i <= size; i++) {
             for (int j = 1; j <= size; j++) {
+                //print only 4 chars
                 System.out.printf("%4d", i * j);
             }
+            //move to the next row
             System.out.println();
         }
     }

@@ -1,5 +1,7 @@
 package org.example.glab_303_5_2;
 
+import java.util.Scanner;
+
 public class SubtractionQuizLoop {
     public static void main(String[] args) {
         final int NUMBER_OF_QUESTIONS = 5; // Number of questions

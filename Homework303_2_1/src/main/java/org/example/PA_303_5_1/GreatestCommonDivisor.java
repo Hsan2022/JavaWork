@@ -1,5 +1,7 @@
 package org.example.PA_303_5_1;
 
+import java.util.Scanner;
+
 public class GreatestCommonDivisor {
     public static void main(String[] args) {
 /*

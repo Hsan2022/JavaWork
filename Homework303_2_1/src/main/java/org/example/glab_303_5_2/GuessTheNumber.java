@@ -1,5 +1,7 @@
 package org.example.glab_303_5_2;
 
+import java.util.Scanner;
+
 public class GuessTheNumber {
     public static void main(String[] args) {
         // Generate a random number to be guessed
