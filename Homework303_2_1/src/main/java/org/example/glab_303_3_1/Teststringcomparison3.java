@@ -9,7 +9,7 @@ package org.example.glab_303_3_1;
 //s1 == s2 : The method returns 0.
 //s1 > s2 : The method returns a positive value.
 //s1 < s2 : The method returns a negative value.
-//Create a class named Teststringcomparison4.java and write the code below to it.
+//Create a class named Teststringcomparison4 . java and write the code below to it.
 public class Teststringcomparison3 {
     public static void main(String args[]){
         String s1="Perscholas";
