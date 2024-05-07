@@ -8,9 +8,10 @@ public class PA_303_7_1_2 {
     public static void main(String[] args) {
 
         int[] myArr = {13, 5, 7, 68, 2};
-
-        int result = myArr.length/2;
-        System.out.println(result);
-
+        if (myArr.length % 2 != 0) {
+            System.out.println(myArr.length/2);
+        } else {
+            System.out.println(myArr[myArr.length / 2 -1]);
+        }
     }
 }

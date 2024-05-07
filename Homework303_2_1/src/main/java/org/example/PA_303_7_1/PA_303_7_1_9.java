@@ -8,11 +8,18 @@ package org.example.PA_303_7_1;
 //The smallest number is 0
 //The biggest number is 13
 
+import java.util.Arrays;
+
 public class PA_303_7_1_9 {
     public static void main(String[] args) {
-        int arr = new int[]{4, 2, 9, 13, 1, 0};
+        int[] arr = {4, 2, 9, 13, 1, 0};
 
+        //sort array
+        //use Array class sort method passing in arr var as argument
+        Arrays.sort(arr);
 
+        //print arr in ascending order
+        System.out.println(Arrays.toString(arr));
 
     }
 }

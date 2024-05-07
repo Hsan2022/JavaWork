@@ -15,7 +15,7 @@ public class PA_303_7_1_7 {
             //Loop through the array and print the value of each element,
             // except for the middle (index 2) element.
             if (i != 2){
-                System.out.println("Val " + i + ": " + intArray[i]);
+                System.out.println("Val: " + i + "val: " + intArray[i]);
             }
         }
     }
