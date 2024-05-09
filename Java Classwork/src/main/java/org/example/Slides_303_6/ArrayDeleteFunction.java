@@ -3,10 +3,13 @@ package org.example.Slides_303_6;
 import java.util.Arrays;
 
 public class ArrayDeleteFunction {
+    //params(int []source=array, int deletedPosition = number)
+    //
     public static int[] delete(int[] source, int deletePosition) {
+        //declaring a new result var equals to array -1
         int[] result = new int[source.length - 1];
+        //looping through
         for (int pos = 0, resultPos = 0; pos < source.length; pos++) {
-
             //if curr val in loop is NOT val to be deleted then:
             if (pos != deletePosition) {
                 //
@@ -30,7 +33,7 @@ public class ArrayDeleteFunction {
         //the delete method passing in array and position to be deleted
         array = delete(array, deletedPosition);
 
-        // Print the resulting array using the java for each method
+        // Print the resulting array using the java 'for each' method
         for (int num : array) {
             System.out.println(num);
         }
