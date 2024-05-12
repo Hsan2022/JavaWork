@@ -1,125 +1,64 @@
 package org.example.glab_303_10_1;
 
+//creating a class
 public class Person {
+    //declare inst var, string type inside Person class
+    //has no access modifiers, so package-private access
     String name;
+
+    //static var in person - BELONG TO CLASS NOT INSTANCE OF CLASS
     static int lifeSpan = 60;
     static double ageFactor = 1.0;
 
+    //Default constructor of the Person - method used to initialize objects of class
     public Person() {
 
+        //constructor also initializes instance var to empty string
+        //WHERE IS DATA TYPE RETURN?
         name = "";
     }
 
+    //Another constructor for Person class
+    //with parameters and initialized var w/val
     public Person(String aName) {
         name = aName;
     }
 
+    //public access labeled method that returns val of instance name var
     public String getName() {
         return name;
     }
 
+    //public access, does not return, labeled method
+    //setter method for name variable
     public void setName(String aName) {
         name = aName;
     }
 
+    //public access String RT toString method
+    //Overrides? to return a str rep of the object
+    //passing in person name param
     public String toString() {
         return ("Hello, my name is " + name);
     }
 
+    //public access String RT labeled method
+    //returns a simple string
     public String talk() {
         return ("I have nothing to say.");
     }
 
+
+    //public access String RT labeled method
+    //returns a simple string
     public String walk() {
         return ("I have nowhere to go.");
     }
 
+    //public access static double RT labeled method
+    //defined to calc lifespan by * two class variable
     public static double lifeSpan() {
         return (lifeSpan * ageFactor);
     }
 }
 
-
-
-
-//Create a class named  Boy, and write the code below.
-//public class Boy extends Person {
-//   static double   ageFactor = 1.1;
-//
-//   public String talk() {
-//       return(super.talk() + " ... but I love Java class.");
-//   }
-//   public String walk() {
-//       return("I am now walking");
-//   }
-//}
-//
-//
-//
-//
-//
-//Create a class named  Girl, and write the code below.
-//public class Girl extends Person {
-//   static double   ageFactor = 1.3;
-//   public Girl(String aName) {
-//       name = "Ms." + aName;
-//   }
-//
-//   public String talk() {
-//       return("Hello! " + jump());
-//   }
-//   public String jump() {
-//       return("I am jumping.");
-//   }
-//   public static double lifeSpan() {
-//       return(lifeSpan * ageFactor);
-//   }
-//}
-//
-//
-//
-//
-//Create a class named TestPeople, and write the code below
-//public class TestPeople {
-//   public static void main(String args[]) {
-//       Person aPerson;
-//       Boy jimmy;
-//       Girl betty;
-//       aPerson = new Person("Fred");
-//       jimmy = new Boy();
-//       betty = new Girl("Betty");
-//
-//       // Boy b = new Person();  // Throw Error
-//       // Girl g = new Person()  // Throw Error
-//       System.out.println(aPerson);
-//       System.out.println(aPerson.talk());
-//       System.out.println(aPerson.walk());
-//       System.out.println();
-//
-//       System.out.println(jimmy);
-//       System.out.println(jimmy.talk());
-//       System.out.println(jimmy.walk());
-//       System.out.println();
-//
-//       System.out.println(betty);
-//       System.out.println(betty.talk());
-//       System.out.println(betty.walk());
-//       System.out.println();
-//
-//       System.out.println((Person)jimmy);
-//       System.out.println(((Person)jimmy).talk());
-//       System.out.println(((Person)jimmy).walk());
-//       System.out.println();
-//
-//       System.out.println((Person)betty);
-//       System.out.println(((Person)betty).talk());
-//       System.out.println(((Person)betty).walk());
-//       System.out.println();
-//
-//       System.out.println(Person.lifeSpan());
-//       System.out.println(Boy.lifeSpan());
-//       System.out.println(Girl.lifeSpan());
-//
-//       System.out.println(((Boy)aPerson).talk());
-//   }
-//}
