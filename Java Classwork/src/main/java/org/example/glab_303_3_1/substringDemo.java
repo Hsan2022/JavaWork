@@ -5,7 +5,7 @@ public class substringDemo {
     public static void main(String[] args) {
         String str1 = "java is fun";
 
-        // extract substring from index 0 to 3
+        // extract substring from index 0 to 3, emd is exclusive
         System.out.println(str1.substring(0, 4));
 
     }

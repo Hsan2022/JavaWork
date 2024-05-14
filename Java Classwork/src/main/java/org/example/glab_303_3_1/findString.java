@@ -6,11 +6,15 @@ public class findString {
         int result;
 
         // getting index of character 's'
+        //result is now the result of calling method
         result = str1.indexOf('s');
 
         System.out.println(result); // 6
 
         // getting index of character 'J'
+        // The lastIndexOf() method returns
+        // the position of the last occurrence of
+        // specified character(s) in a string.
         result = str1.lastIndexOf('J');
         System.out.println(result); // 0
 
@@ -18,15 +22,15 @@ public class findString {
         result = str1.lastIndexOf('a');
         System.out.println(result); // 3
 
-        // character not in the string
+        // character "not" in the string
         result = str1.lastIndexOf('j');
         System.out.println(result); // -1
 
-        // getting the last occurrence of "ava"
+        // getting the last occurrence of "ava" "index start"
         result = str1.lastIndexOf("ava");
         System.out.println(result); // 1
 
-        // substring not in the string
+        // substring "not" in the string ???
         result = str1.lastIndexOf("java");
         System.out.println(result); // -1
     }

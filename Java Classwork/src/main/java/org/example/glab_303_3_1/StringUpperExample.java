@@ -4,8 +4,12 @@ public class StringUpperExample {
     public static void main(String args[]){
         //lowercase string
         String s1="hello how are you";
-        //reassign string
+
+
+        //reassign string to result of uppercase method on s1
         String s1upper=s1.toUpperCase();
+
+
         //print new val
         System.out.println(s1upper); // =>
     }

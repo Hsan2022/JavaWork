@@ -2,12 +2,15 @@ package org.example.glab_303_3_1;
 //You can also use the + operator to concatenate two or more strings.
 // But the Java String class provides the concat() method.
 // This method combines a specific string at the end of another string, and ultimately returns a combined string.
+
+
+
 public class concatDemo {
     public static void main(String[] args) {
         //------By using concat method----
         String str1 = "Learn ";
         String str2 = "Java";
-        // concatenate str1 and str2
+        // concatenate str1 and str2 by calling concat method of str1
         System.out.println(str1.concat(str2)); // "Learn Java"
 
         // concatenate str2 and str11

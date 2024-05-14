@@ -1,6 +1,12 @@
 package org.example;
 
 
+//input = interger
+//output = interger
+
+
+
+
 //public static int getDigitsSum2(int largeNumber) {
 //    int sum = 0;
 
@@ -36,4 +42,4 @@ package org.example;
 
 
 
-}
+//}//
