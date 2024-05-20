@@ -1,6 +1,7 @@
 package org.example.glab_303_3_1;
 /*
 IsEmpty() method:
+//returns  boolean
 This method checks whether the String contains anything or not.
 If the Java String is empty, it returns true or false.
 */

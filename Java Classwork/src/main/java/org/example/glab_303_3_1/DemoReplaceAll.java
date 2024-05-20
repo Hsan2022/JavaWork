@@ -11,9 +11,13 @@ public class DemoReplaceAll {
         String str1 = "Java123is456fun";
 
         // regex for sequence of digits
+        // the "\\" is necessary to escape backlash
+        //we're sort of filtering for a sequence of digits
+
+        //"\\d+" is a regular expression that matches one or more digits.
         String regex = "\\d+";
 
-        // replace all occurrences of numeric
+        // replace all occurrences of numeric with a space string
         // digits by a space
         System.out.println(str1.replaceAll(regex, " ")); //Java is fun
     }

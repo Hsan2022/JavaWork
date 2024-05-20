@@ -10,11 +10,22 @@ import java.util.Scanner;
 //s3 is Learners
 public class ReadingStringFromConsole {
     public static void main(String[] args) {
+        //Initialize Scanner Object: Inside the main method, a Scanner object named input is created,
+        // which is initialized with System.in.
+        // This indicates that the scanner will read input from the standard input stream,
+        // typically the keyboard.
         Scanner input = new Scanner(System.in);
+
+        //prints prompt for user
         System.out.print("Enter three words separated by spaces: ");
+
+        //scanner reading the next token/word using the next()
+        //stores user input and assign reading to var
         String s1 = input.next();
         String s2 = input.next();
         String s3 = input.next();
+
+        //print input values
         System.out.println("s1 is " + s1);
         System.out.println("s2 is " + s2);
         System.out.println("s3 is " + s3);

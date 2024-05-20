@@ -2,6 +2,8 @@ package org.example.glab_303_3_1;
 //The replace() method replaces each matching occurrence of the old character/text in the string with the new character/text.
 //The syntax of the replace() method is either:
 
+
+// this method takes in two pare
 //stringobj.replace(char oldChar, char newChar)
 
 //or
@@ -20,8 +22,10 @@ public class ReplaceDemoMain {
         // all occurences of 'L' is replaced with 'J'
         System.out.println("Lava".replace('L', 'J'));
         // character not in the string
+
         System.out.println("Hello".replace('4', 'J'));
-// all occurrences of "C++" is replaced with "Java"
+        // all occurrences of "C++" is replaced with "Java"
+
         System.out.println(str1.replace("C++", "Java"));
 
         // all occurences of "aa" is replaced with "zz"
@@ -31,3 +35,5 @@ public class ReplaceDemoMain {
         System.out.println("Java".replace("C++", "C"));
     }
 }
+
+//Note: If the substring to be replaced is not in the string, replace() returns the original string.

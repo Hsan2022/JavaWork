@@ -3,8 +3,6 @@ package org.example.glab_303_3_1;
 // But the Java String class provides the concat() method.
 // This method combines a specific string at the end of another string, and ultimately returns a combined string.
 
-
-
 public class concatDemo {
     public static void main(String[] args) {
         //------By using concat method----

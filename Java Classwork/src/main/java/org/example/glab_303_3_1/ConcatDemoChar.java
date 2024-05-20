@@ -4,7 +4,8 @@ public class ConcatDemoChar {
     public static void main(String[] args) {
 
         String message = "Welcome to Java";
-        //calling charAt() retrieves char at specified index
+
+        //calling charAt() retrieves char at specified index/pos
         System.out.println("The first character in the message is " + message.charAt(0));
     }
 }

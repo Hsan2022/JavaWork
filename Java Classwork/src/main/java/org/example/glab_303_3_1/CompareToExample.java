@@ -4,6 +4,8 @@ package org.example.glab_303_3_1;
 // It either returns a positive number, a negative number, or 0.
 public class CompareToExample {
     public static void main(String args[]){
+
+        //declaring a string with RT, var name, vaolue
         String s1="hello";
         String s2="hello";
         String s3="hemlo";

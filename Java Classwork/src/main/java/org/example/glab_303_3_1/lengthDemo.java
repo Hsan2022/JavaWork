@@ -2,7 +2,7 @@ package org.example.glab_303_3_1;
 //The length() method returns the number of characters present in the string.
 public class lengthDemo {
     public static void main(String[] args) {
-        //declare new string var = Java
+        //declare new string RT, var, = Java
         String str1 = "Java";
         //declare empty string var
         String str2 = "";
@@ -12,7 +12,7 @@ public class lengthDemo {
         System.out.println(str1.length());  // 4
         System.out.println(str2.length());  // 0
 
-        //printing arrays length method
+        //printing arrays length method directly on a string
         System.out.println("Java".length());  // 4
 
 
