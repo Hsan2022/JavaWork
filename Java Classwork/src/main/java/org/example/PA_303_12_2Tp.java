@@ -17,12 +17,13 @@ public class PA_303_12_2Tp {
             }
         }
         // Add catch blocks to handle any exceptions that may occur.
-        catch (ArithmeticException e) {
-            System.out.println("  ArithmeticException caught: " + e.getMessage());
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("  ArrayIndexOutOfBoundsException caught: " + e.getMessage());
-        } catch (Exception e) {
-            System.out.println("  Exception caught: " + e.getMessage());
+//        catch (ArithmeticException e) {
+//            System.out.println("  ArithmeticException caught: " + e.getMessage());
+//        } catch (ArrayIndexOutOfBoundsException e) {
+//            System.out.println("  ArrayIndexOutOfBoundsException caught: " + e.getMessage());
+//        }
+        catch (Exception e) {
+            System.out.println(e);
         }
     }
 }
@@ -36,5 +37,4 @@ class Solution {
         PA_303_12_2Tp.iterateAndDivide(arr, 10, 2, 0);
         PA_303_12_2Tp.iterateAndDivide(arr, 10, -1, -2);
     }
-
 }
