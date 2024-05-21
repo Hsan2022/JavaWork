@@ -52,8 +52,3 @@ public class Football implements Sport {
         }
     }
 }
-
-
-
-
-//no correr por que method is not called!
