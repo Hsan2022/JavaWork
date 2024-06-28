@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- optimizing the process(faster rendering by pre connecting) for fetching fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- this is an id class for resume -->
+  <!-- wraps resume content -->
+  <div id="resume">
+    <!-- this is a class(1:2) container -->
+    <!-- this is the top horizontal section -->
+    <section class="container">
+
+
+      <!-- this is the header code block with photo, title -->
+      <!-- header has 1 div class, -->
+      <!-- header also has 1 section class -->
+      <header>
+        <div class="image-title">
+          <img src="img/duck.jpeg" alt="my photo" id="myphoto-img" />
+          <div class="professional-title">
+            <h1>First And Lastname</h1>
+            <h2>Software Engineer</h2>
+          </div>
+        </div>
+        <!-- content block on top right -->
+        <section class="relevant-info">
+          <div>
+            <span>Name: </span>
+            <!-- <span>Date of Birth: </span> -->
+            <span>Address: </span>
+            <span>Phone: </span>
+            <span>Email: </span>
+            <span>Webpage: </span>
+          </div>
+          <!-- add personal info to display -->
+          <div>
+            <p>Firstname Lastname</p>
+            <!-- <p>month, day, year</p> -->
+            <p>Potato Town, ID 12345, US</p>
+            <p>+1-555-555-5555</p>
+            <a href="email address">myname@gmail.com</a>
+            <a href="personal-website">https://github.com</a>
+          </div>
+        </section>
+      </header>
+
+      <!-- this is a simple description of my aspirations -->
+      <summary>
+        Hi! My name is "blah blah blah/Pitchy?" I'm an enthusiastic software developer proficient in Java, JavaScript, and SQL.
+        I've honed my technical abilities through a rigorous training program in Full
+        Stack Java development, mastering core concepts like Object-Oriented
+        Programming and advanced techniques such as MVC framework and database integration.
+        I’m adept with essential developer tools like git and GitHub, and
+        committed to creating impactful software solutions that prioritize user
+        experience and technical innovation. I’m eager to contribute my expertise to
+        challenging projects within the tech industry.
+      </summary>
+
+      <!-- this is the main content container -->
+      <!-- it has 2 sections: education, employment -->
+    </section>
+    <!-- this is a class (2:2)container for the body-->
+    <section class="content-body-container">
+      <div style="padding: 40px 10px 40px 35px; width: 70%">
+
+        <!-- education block-->
+        <!-- use this class name in css -->
+        <section class="education-section">
+          <div class="education-section-header">
+            <img class="education-blue-down-arrow-icon" src="icons/white-down-arrow.png" alt="white down arrow icon"/>
+            <h3 style="text-transform: uppercase">Education</h3>
+          </div>
+          <section class="education">
+            <div class="education-header">
+              <div class="education-header-left">
+                <img class="education-arrow-right-icon" src="icons/white-right-arrow.png" alt="right blue arrow icon"/>
+                <span>
+                  <h4 class="school">Per Scholas</h4>
+                  <h5 class="field-of-study">Field of Study</h5>
+                </span>
+              </div>
+              <p class="date">August 2024</p>
+            </div>
+            <p class="education-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+              nulla veniam illum, in quam officia! Rem quo dolorum
+              reprehenderit aliquid accusantium delectus ducimus nisi
+              doloribus similique, placeat, vero laboriosam architecto optio
+              ad enim reiciendis, esse obcaecati itaque ratione? Doloremque,
+              in!
+            </p>
+          </section>
+          <section class="education">
+            <div class="education-header">
+              <div class="education-header-left">
+                <img class="education-arrow-right-icon" src="icons/white-right-arrow.png"
+                alt="blue arrow icon"
+                />
+                <span>
+                  <h4 class="school">Coursera</h4>
+                  <h5 class="field-of-study">Field of Study</h5>
+                </span>
+              </div>
+              <p class="date">May 2024</p>
+            </div>
+            <p class="education-content">
+              Introduction to core web development technologies like HTML and CSS
+              and modern UI frameworks such as Bootstrap and React that make it easy
+              to create interactive user experiences.
+            </p>
+          </section>
+          <section class="education">
+            <div class="education-header">
+              <div class="education-header-left">
+                <img class="education-arrow-right-icon" src="icons/white-right-arrow.png"
+                alt="blue arrow icon"/>
+                <span>
+                  <h4 class="school">Western Governors University</h4>
+                  <h5 class="field-of-study">Field of Study</h5>
+                </span>
+              </div>
+              <p class="date"></p>
+            </div>
+            <p class="education-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+              nulla veniam illum,
+            </p>
+          </section>
+          <section class="education">
+            <div class="education-header">
+              <div class="education-header-left">
+                <img class="education-arrow-right-icon" src="icons/white-right-arrow.png"
+                alt="blue arrow icon"/>
+                <span>
+                  <h4 class="school">Western Governors University</h4>
+                  <h5 class="field-of-study">Field of Study</h5>
+                </span>
+              </div>
+              <p class="date"></p>
+            </div>
+            <p class="education-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+              nulla veniam illum,
+            </p>
+          </section>
+        </section>
+
+
+
+
+        <!-- employment block -->
+        <section class="employment-section">
+          <div class="employment-section-header">
+            <img class="employment-green-arrow-down-icon" src="icons/white-down-arrow.png" alt="white down arrow icon" />
+            <h3 style="text-transform: uppercase">Employment History</h3>
+          </div>
+
+          <!-- <div class="education-header-left">
+                <img class="education-arrow-right-icon" src="icons/white-right-arrow.png"
+                alt="blue arrow icon"/>
+                <span>
+                  <h4 class="school">Western Governos University</h4>
+                  <h5 class="job-title">Field of Study</h5>
+                </span>
+              </div> -->
+          <section class="employment">
+            <div class="employment-header">
+              <div class="employment-header-left">
+                <img class="employment-arrow-right-icon" src="icons/white-right-arrow.png" alt="arrow right icon" />
+                <span>
+                  <h4 class="company">Company I worked at</h4>
+                  <h5 class="job-title">My Job Title</h5>
+                </span>
+              </div>
+              <p class="date">January 2024 - Present</p>
+            </div>
+            <p class="employment-content">
+              Job descrition Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+              nulla veniam illum, in quam officia! Rem quo dolorum
+              reprehenderit aliquid accusantium delectus ducimus nisi
+              doloribus similique, placeat, vero laboriosam architecto optio
+              ad enim reiciendis, esse obcaecati itaque ratione? Doloremque,
+              in!
+            </p>
+          </section>
+          <section class="employment">
+            <div class="employment-header">
+              <div class="employment-header-left">
+                <img class="employment-arrow-right-icon" src="icons/white-right-arrow.png" alt="arrow right icon" />
+                <span>
+                  <h4 class="company">Company I worked at</h4>
+                  <h5 class="job-title">My Job Title</h5>
+                </span>
+              </div>
+              <p class="date">June 2017 - August 2023</p>
+            </div>
+            <p class="employment-content">
+              Job descrition Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+              nulla veniam illum, in quam officia! Rem quo dolorum
+              reprehenderit aliquid accusantium delectus ducimus nisi
+              doloribus similique, placeat, vero laboriosam architecto optio
+              ad enim reiciendis, esse obcaecati itaque ratione? Doloremque,
+              in!
+            </p>
+          </section>
+        </section>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- right sidebar -->
+      <!-- this is content separate but related to the main content -->
+      <!-- content on the bottom half right -->
+      <aside style="padding: 40px 10px 40px 20px">
+        <section>
+          <h3>Technical Skills</h3>
+          <div>
+            <p class="skill">Java</p>
+            <div class="java">
+              <div id="java-percent" class="percentage">90%</div>
+            </div>
+          </div>
+          <div>
+            <p class="back-end">Spring Boot, Data, MVC, Validation</p>
+            <div class="percent-container">
+              <div id="b-e-percent" class="percentage">80%</div>
+            </div> 
+          </div>
+          <div>
+            <p class="skill">MySQL</p>
+            <div class="percent-container">
+              <div id="mysql-percent" class="percentage">70%</div>
+            </div>
+          </div>
+          <div>
+            <p class="skill">JavaScript</p>
+            <div class="percent-container">
+              <div id="js-percent" class="percentage">90%</div>
+            </div>
+          </div>
+          <div>
+            <p class="skill">HTML</p>
+            <div class="percent-container">
+              <div id="html-percent" class="percentage">85%</div>
+            </div>
+          </div>
+          <div>
+            <p class="skill">CSS</p>
+            <div class="percent-container">
+              <div id="css-percent" class="percentage">80%</div>
+            </div>
+          </div>
+          <div>
+            <p class="skill">Python</p>
+            <div class="percent-container">
+              <div id="python-percent" class="percentage">65%</div>
+            </div>
+          </div>
+        </section>
+
+
+        <section>
+          <h3>Software Tools</h3>
+          <div class="tool">
+            <div id="chrome-square" class="color-square"></div>
+            <p class="name">Chrome Dev Tools</p>
+          </div>
+          <div class="tool">
+            <div id="workbench-square" class="color-square"></div>
+            <p class="name">MySQL Workbench</p>
+          </div>
+          <div class="tool">
+            <div id="git-square" class="color-square"></div>
+            <p class="name">Git, GitHub</p>
+          </div>
+          <div class="tool">
+            <div id="intellij-square" class="color-square"></div>
+            <p class="name">Intellij</p>
+          </div>
+          <div class="tool">
+            <div id="vscode-square" class="color-square"></div>
+            <p class="name">VSCode</p>
+          </div>
+          <div class="tool">
+            <div id="kanban-square" class="color-square"></div>
+            <p class="name">Kanban</p>
+          </div>
+          <div class="tool">
+            <div id="figma-square" class="color-square"></div>
+            <p class="name">Figma</p>
+          </div>
+        </section>
+
+
+        <section>
+          <h3>Language Proficiency</h3>
+          <div class="language">
+            <p class="name">English</p>
+            <div class="language-proficiency-container">
+              <div id="english-circle" class="color-circle"></div>
+              <div id="english-circle" class="color-circle"></div>
+              <div id="english-circle" class="color-circle"></div>
+              <div id="english-circle" class="color-circle"></div>
+              <div id="english-circle" class="color-circle"></div>
+            </div>
+          </div>
+
+          <div class="language">
+            <p class="name">Spanish</p>
+            <div class="language-score-container">
+              <div id="spanish-circle" class="color-circle"></div>
+              <div id="spanish-circle" class="color-circle"></div>
+              <div id="spanish-circle" class="color-circle"></div>
+              <div id="spanish-circle" class="color-circle"></div>
+              <div id="spanish-circle" class="color-circle"></div>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </div>
+</body>
+
+</html>

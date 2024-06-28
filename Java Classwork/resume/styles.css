@@ -1,0 +1,352 @@
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+/* this for unique id */
+#resume {
+  width: 950px;
+  background-color: #141414;
+  color: rgb(224, 225, 225);
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 40px 35px;
+  border-bottom: 1px solid #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-title {
+  display: flex;
+}
+
+#myphoto-img {
+  width: 200px;
+  border-radius: 50%;
+  border: solid 4px rgb(53, 53, 53);
+}
+
+.professional-title {
+  width: 380px;
+  padding: 20px;
+}
+
+.professional-title h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: semi-bold;
+}
+
+.professional-title h2 {
+  color: rgb(57, 134, 178);
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.relevant-info {
+  display: flex;
+  width: 425px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+
+/* all children are arranged vertically/columns */
+/* 1st div child */
+/* aligns all elements to the end (right of top page) */
+.relevant-info div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* 2nd div child */
+.relevant-info div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+/* descendants of 2nd child, p tags  */
+.relevant-info div:nth-child(2) p {
+  margin-left: 10px;
+  color: rgb(122, 118, 119);
+}
+
+/* descendants of 2nd child, a tags, anchor elements, no underline decorator */
+.relevant-info div:nth-child(2) a {
+  margin-left: 10px;
+  color: rgb(57, 134, 178);
+  text-decoration: none;
+}
+
+/* professional summary */
+summary {
+  color: rgb(122, 118, 119);
+  font-weight: bold;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+/* class with flexible boxes/immediate children */
+.content-body-container {
+  display: flex;
+}
+
+.main-content {
+  padding: 40px 10px 40px 35px;
+  width: 70%;
+}
+
+/* Styles for employment and education sections */
+.employment-section,
+.education-section {
+  margin-bottom: 30px;
+}
+
+/* Styles for section headers */
+.employment-section-header,
+.education-section-header {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgb(48, 48, 48);
+  
+}
+
+/* Styles for arrow icon in education section */
+.education-blue-down-arrow-icon {
+  background: rgb(42, 152, 197);
+}
+
+
+/* Styles for arrow icons in employment section */
+.education-blue-down-arrow-icon {
+  margin-right: 15px;
+  background: rgb(42, 152, 197);
+  padding: 8px;
+  border-radius: 8px;
+  width: 40px;
+  height: auto;
+}
+
+/* Styles for arrow icons in employment section */
+.employment-green-arrow-down-icon {
+  margin-right: 15px;
+  background: rgb(72, 131, 46);
+  padding: 8px;
+  border-radius: 8px;
+  width: 40px;
+  height: auto;
+}
+
+/* Styles for individual items within employment and education sections */
+.employment,
+.education {
+  padding: 20px 0px;
+  border-bottom: 1px dashed rgb(48, 48, 48);
+}
+
+/* Styles for the last item in employment and education sections */
+.employment:last-child,
+.education:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Styles for headers within employment and education sections */
+.employment-header,
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Styles for left-aligned headers within employment and education sections */
+.employment-header-left,
+.education-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.education-header-left .header-container,
+.employment-header-left .header-container {
+  display: flex;
+  flex-direction: column; /* Makes h4 and h5 stack vertically */
+}
+
+/* Styles for arrow icons next to headers */
+.employment-arrow-right-icon{
+  background: rgb(72, 131, 46);
+}
+
+.education-arrow-right-icon{
+  background:  rgb(42, 152, 197);
+}
+
+/* Styles for arrow icons next to headers */
+.employment-arrow-right-icon, 
+.education-arrow-right-icon{
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  align-self: flex-start;
+}
+
+/* Styles for text elements */
+.company,
+.school {
+  font-size: 18px;
+}
+
+.job-title,
+.field-of-study {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.date {
+  font-size: 18px;
+  color: rgb(76, 76, 76);
+}
+
+.field-of-study,
+.education-content,
+.job-title,
+.employment-content,
+.date{
+  color: rgb(122, 118, 119);
+}
+
+/* Sidebar */
+aside {
+  padding: 40px 10px 40px 20px;
+}
+
+aside section {
+  margin-top: 35px;
+}
+
+aside section:first-child {
+  margin-top: 0;
+}
+
+aside h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.name {
+  color: rgb(122, 118, 119);
+  font-weight: bold;
+}
+
+/* Tech skills */
+.percent-container {
+  background-color: rgb(76, 76, 76);
+  margin: 10px 0px;
+}
+
+.percentage {
+  text-align: end;
+  font-weight: semi-bold;
+  padding-right: 2px;
+}
+
+#java-percent {
+  width: 90%;
+  background-color: rgb(23, 112, 157);
+}
+
+#b-e-percent {
+  width: 80%;
+  background-color: rgb(36, 156, 197);
+}
+
+#mysql-percent {
+  width: 70%;
+  background-color: rgb(0, 128, 128);
+  /* background: rgb(201, 25, 19); */
+}
+
+#js-percent {
+  width: 90%;
+  background: rgb(225, 162, 28);
+}
+
+#html-percent {
+  width: 85%;
+  background: rgb(240, 47, 12);
+}
+
+#css-percent {
+  width: 80%;
+  background: rgb(42, 12, 240);
+}
+
+#python-percent {
+  width: 65%;
+  background: rgb(3, 90, 41); 
+}
+
+
+
+/* software tools */
+.tool {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.color-square {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+#chrome-square {
+  background-color: rgb(23, 112, 157);
+}
+
+#workbench-square {
+  background-color: rgb(36, 156, 197);
+}
+
+#git-square {
+  background-color: rgb(0, 128, 128);
+}
+
+#intellij-square {
+  background: rgb(225, 162, 28);
+}
+
+#vscode-square {
+  background: rgb(240, 47, 12);
+}
+
+#kanban-square {
+  background: rgb(42, 12, 240);
+}
+
+#figma-square {
+  background: rgb(3, 90, 41); 
+}
