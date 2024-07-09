@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- server-side rendering -->
+<!-- th:text directive is a thyme leaf attribute-->
+<!-- the value for a key sent from the controller is accessed using "${}" syntax -->
+<!-- th:each attr is used to iterate over collections of different object types -->
+
+
+
+<!-- root el, th ia namespace-->
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<!-- contains visible html content -->
+<body>
+
+<!-- table properties -->
+<table style="border: 1px solid black">
+
+  <!-- table row -> variable iteration over collection(flowers in this case)-->
+  <tr th:each="showflowers: ${flowersVariable}">
+
+    <!-- table data -> text content for each iteration value -->
+    <td th:text="${showflowers}" />
+
+  </tr>
+</table>
+
+
+<!-- table properties -->
+<table style="border: 1px solid black">
+
+  <!-- table row -> variable iteration over collection(cities in this case)-->
+  <tr th:each="showCity: ${CityVariable}">
+
+    <!-- table data -> text content for each iteration value -->
+    <td th:text="${showCity}" />
+
+  </tr>
+</table>
+</body>
+</html>

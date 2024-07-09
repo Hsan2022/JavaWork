@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--visible part of HTML-->
+<body>
+
+<!--Defines a division with the ID one.-->
+<div id="one">
+    <!-- attribute to dynamically insert the value of
+    the ${message} expression into the <h2> element.-->
+    <h2 th:text="${message}">
+        <!-- default text that will show if ${message} is not resolved.-->
+        <span>message will print here</span>
+    </h2>
+</div>
+
+<!-- th:each attribute to iterate over a collection ${cloudProvider}.
+For each element in ${cloudProvider}, Thymeleaf creates a new context variable List. -->
+<div id="two" th:each="List:${cloudProvider}">
+    <ul>
+        <li>
+            <!-- th:text attribute to dynamically insert the value
+            of List into the <span> element for each iteration. -->
+            <span th:text=${List}>items will print here</span>
+
+        </li>
+    </ul>
+</div>
+</body>
+</html>
